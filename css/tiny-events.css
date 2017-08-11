@@ -1,0 +1,240 @@
+
+/* Events Loop */
+/* ---------- */
+
+/* container */
+.tiny-events-filters,
+.tiny-events-list {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* event filters */
+.tiny-events-filters label {
+    display: block;
+    font-weight: bold;
+}
+
+/* loop date */
+h2.tiny-events-list__date {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 3rem !important;
+    margin-bottom: 1rem !important;
+    font-weight: bold;
+}
+h2.tiny-events-list__date.first {
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+}
+.tiny-events-list hr {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* event card */
+.tiny-events-list .tiny-event {
+    display: block;
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: solid 1px white;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.tiny-events-list .tiny-event:hover,
+.tiny-events-list .tiny-event:focus {
+    border: solid 1px lightgrey;
+}
+@media (min-width: 675px) {
+    .tiny-events-list .tiny-event:hover .tiny-event__btn,
+    .tiny-events-list .tiny-event:focus .tiny-event__btn {
+        background-color: lightgrey;
+    }
+}
+
+/* event card - header */
+.tiny-events-list .tiny-event .tiny-event__header {
+    padding: 0;
+}
+.tiny-events-list .tiny-event .tiny-event__header h4 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+    display: inline-block !important;
+    text-decoration: underline !important;
+    text-transform: none !important;
+}
+.tiny-events-list .tiny-event .tiny-event__header small {
+    margin-bottom: 1rem;
+    display: block;
+}
+@media (min-width: 675px) {
+    .tiny-events-list .tiny-event .tiny-event__header small {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-left: 1rem;
+    }
+}
+
+/* event card - date / time / cost + icons */
+.tiny-event__icon {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 1rem;
+    margin-right: 0.375rem;
+}
+.tiny-event__date,
+.tiny-event__time,
+.tiny-event__cost {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+.tiny-event__date p,
+.tiny-event__time p,
+.tiny-event__cost p {
+    margin: 0;
+    font-weight: bold;
+}
+@media (min-width: 675px) {
+    .tiny-event__date,
+    .tiny-event__time,
+    .tiny-event__cost {
+        display: inline-block;
+        margin-right: 1.5rem;
+    }
+}
+
+/* event card - content */
+.tiny-events-list .tiny-event .tiny-event__content {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+@media (min-width: 675px) {
+    .tiny-events-list .tiny-event .tiny-event__content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+/* event card - image */
+.tiny-events-list .tiny-event .tiny-event__image {
+    display: none;
+}
+@media (min-width: 675px) {
+    .tiny-events-list .tiny-event .tiny-event__image {
+        display: block;
+        position: relative;
+        width: 20%;
+        height: 100px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* event card - content innner */
+@media (min-width: 675px) {
+    .tiny-events-list .tiny-event .tiny-event__content-inner {
+        padding-left: 0.75rem;    
+    }
+}
+.tiny-events-list .tiny-event .tiny-event__content-inner p {
+    margin: 0;
+}
+@media (min-width: 675px) {
+    .tiny-events-list .tiny-event .tiny-event__content-inner {
+         width: 80%;
+    }
+}
+
+/* event card - link */
+.tiny-events-list .tiny-event > a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.tiny-events-list .tiny-event > a:hover,
+.tiny-events-list .tiny-event > a:focus {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+/* event card - button */
+.tiny-events-list .tiny-event .tiny-event__btn {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    background-color: lightgrey;
+}
+@media (min-width: 675px) {
+    .tiny-events-list .tiny-event .tiny-event__btn {
+         display: block;
+         text-align: center;
+         border: solid 1px lightgrey;
+         background-color: transparent;
+    }
+}
+
+
+/* Events Single Template */
+/* ---------------------- */
+
+/* title */
+h1.tiny-events-single__title {
+    font-weight: bold !important;
+    display: inline-block !important;
+    margin-bottom: 2rem !important;
+    text-transform: none !important;
+}
+.tiny-events-single__type {
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+@media (min-width: 675px) {
+    .tiny-events-single__type {
+        margin-bottom: 0;
+        margin-left: 1rem;
+    }
+}
+
+/* image */
+.tiny-events-single__image {
+    margin-bottom: 2rem;
+}
+
+/* date / time / cost + icons */
+.tiny-events-single__icon {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 2rem;
+    margin-right: 0.5rem;
+}
+.tiny-events-single__date p,
+.tiny-events-single__time p,
+.tiny-events-single__cost p {
+    font-weight: bold;
+}
+@media (min-width: 675px) {
+    .tiny-events-single__date,
+    .tiny-events-single__time,
+    .tiny-events-single__cost {
+        display: inline-block;
+        margin-right: 2rem;
+    }
+}
+
+/* logo */
+.tiny-events-single__logo img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
